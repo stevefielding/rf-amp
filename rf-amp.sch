@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:rf-amp-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q1
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q1
 U 1 1 5DBAA51F
 P 5650 2400
 F 0 "Q1" H 5838 2453 60  0000 L CNN
@@ -34,7 +35,7 @@ F 12 "Active" H 5850 3600 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q4
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q4
 U 1 1 5DBAA93A
 P 6800 1900
 F 0 "Q4" H 6988 1953 60  0000 L CNN
@@ -54,7 +55,7 @@ F 12 "Active" H 7000 3100 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q5
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q5
 U 1 1 5DBAAC65
 P 7400 2400
 F 0 "Q5" H 7588 2453 60  0000 L CNN
@@ -74,7 +75,7 @@ F 12 "Active" H 7600 3600 60  0001 L CNN "Status"
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q6
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q6
 U 1 1 5DBAAF6B
 P 7450 5000
 F 0 "Q6" H 7637 4947 60  0000 L CNN
@@ -91,10 +92,10 @@ F 10 "TRANS NPN 40V 0.2A SOT23" H 7650 6000 60  0001 L CNN "Description"
 F 11 "Micro Commercial Co" H 7650 6100 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 7650 6200 60  0001 L CNN "Status"
 	1    7450 5000
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q3
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q3
 U 1 1 5DBAB9B8
 P 6400 4400
 F 0 "Q3" H 6587 4347 60  0000 L CNN
@@ -111,10 +112,10 @@ F 10 "TRANS NPN 40V 0.2A SOT23" H 6600 5400 60  0001 L CNN "Description"
 F 11 "Micro Commercial Co" H 6600 5500 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 6600 5600 60  0001 L CNN "Status"
 	1    6400 4400
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
-L dk_Transistors-Bipolar-BJT-Single:MMBT3904-TP Q2
+L rf-amp-rescue:MMBT3904-TP-dk_Transistors-Bipolar-BJT-Single Q2
 U 1 1 5DBAC33B
 P 5850 4850
 F 0 "Q2" H 6037 4797 60  0000 L CNN
@@ -131,14 +132,14 @@ F 10 "TRANS NPN 40V 0.2A SOT23" H 6050 5850 60  0001 L CNN "Description"
 F 11 "Micro Commercial Co" H 6050 5950 60  0001 L CNN "Manufacturer"
 F 12 "Active" H 6050 6050 60  0001 L CNN "Status"
 	1    5850 4850
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C1
 U 1 1 5DBACB59
 P 5000 2400
 F 0 "C1" V 4771 2400 50  0000 C CNN
-F 1 "C_Small" V 4862 2400 50  0000 C CNN
+F 1 "0.1u" V 4862 2400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5000 2400 50  0001 C CNN
 F 3 "~" H 5000 2400 50  0001 C CNN
 	1    5000 2400
@@ -149,7 +150,7 @@ L Device:C_Small C7
 U 1 1 5DBAD862
 P 7950 2850
 F 0 "C7" V 7721 2850 50  0000 C CNN
-F 1 "C_Small" V 7812 2850 50  0000 C CNN
+F 1 "0.1u" V 7812 2850 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7950 2850 50  0001 C CNN
 F 3 "~" H 7950 2850 50  0001 C CNN
 	1    7950 2850
@@ -160,7 +161,7 @@ L Device:C_Small C3
 U 1 1 5DBADD67
 P 6050 2800
 F 0 "C3" V 5821 2800 50  0000 C CNN
-F 1 "C_Small" V 5912 2800 50  0000 C CNN
+F 1 "0.1u" V 5912 2800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6050 2800 50  0001 C CNN
 F 3 "~" H 6050 2800 50  0001 C CNN
 	1    6050 2800
@@ -171,7 +172,7 @@ L Device:C_Small C8
 U 1 1 5DBAE130
 P 7950 5000
 F 0 "C8" V 7721 5000 50  0000 C CNN
-F 1 "C_Small" V 7812 5000 50  0000 C CNN
+F 1 "0.1u" V 7812 5000 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7950 5000 50  0001 C CNN
 F 3 "~" H 7950 5000 50  0001 C CNN
 	1    7950 5000
@@ -182,7 +183,7 @@ L Device:C_Small C5
 U 1 1 5DBAE594
 P 6950 5400
 F 0 "C5" V 6721 5400 50  0000 C CNN
-F 1 "C_Small" V 6812 5400 50  0000 C CNN
+F 1 "0.1u" V 6812 5400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6950 5400 50  0001 C CNN
 F 3 "~" H 6950 5400 50  0001 C CNN
 	1    6950 5400
@@ -193,7 +194,7 @@ L Device:C_Small C2
 U 1 1 5DBAEF64
 P 5350 5350
 F 0 "C2" V 5121 5350 50  0000 C CNN
-F 1 "C_Small" V 5212 5350 50  0000 C CNN
+F 1 "0.1u" V 5212 5350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5350 5350 50  0001 C CNN
 F 3 "~" H 5350 5350 50  0001 C CNN
 	1    5350 5350
@@ -204,7 +205,7 @@ L Device:C_Small C4
 U 1 1 5DBAFAF8
 P 6750 4000
 F 0 "C4" H 6658 3954 50  0000 R CNN
-F 1 "C_Small" H 6658 4045 50  0000 R CNN
+F 1 "0.1u" H 6658 4045 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6750 4000 50  0001 C CNN
 F 3 "~" H 6750 4000 50  0001 C CNN
 	1    6750 4000
@@ -215,7 +216,7 @@ L Device:C_Small C6
 U 1 1 5DBB033C
 P 7850 1700
 F 0 "C6" H 7758 1654 50  0000 R CNN
-F 1 "C_Small" H 7758 1745 50  0000 R CNN
+F 1 "0.1u" H 7758 1745 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7850 1700 50  0001 C CNN
 F 3 "~" H 7850 1700 50  0001 C CNN
 	1    7850 1700
@@ -226,7 +227,7 @@ L Device:R_Small_US R5
 U 1 1 5DBB140A
 P 5750 1700
 F 0 "R5" H 5818 1746 50  0000 L CNN
-F 1 "R_Small_US" H 5818 1655 50  0000 L CNN
+F 1 "220" H 5818 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5750 1700 50  0001 C CNN
 F 3 "~" H 5750 1700 50  0001 C CNN
 	1    5750 1700
@@ -237,7 +238,7 @@ L Device:R_Small_US R6
 U 1 1 5DBB1CAF
 P 5750 3000
 F 0 "R6" H 5818 3046 50  0000 L CNN
-F 1 "R_Small_US" H 5818 2955 50  0000 L CNN
+F 1 "100" H 5818 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5750 3000 50  0001 C CNN
 F 3 "~" H 5750 3000 50  0001 C CNN
 	1    5750 3000
@@ -248,7 +249,7 @@ L Device:R_Small_US R8
 U 1 1 5DBB265D
 P 6300 3000
 F 0 "R8" H 6368 3046 50  0000 L CNN
-F 1 "R_Small_US" H 6368 2955 50  0000 L CNN
+F 1 "10" H 6368 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 3000 50  0001 C CNN
 F 3 "~" H 6300 3000 50  0001 C CNN
 	1    6300 3000
@@ -259,7 +260,7 @@ L Device:R_Small_US R11
 U 1 1 5DBB638F
 P 6900 2650
 F 0 "R11" H 6968 2696 50  0000 L CNN
-F 1 "R_Small_US" H 6968 2605 50  0000 L CNN
+F 1 "2.2K" H 6968 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6900 2650 50  0001 C CNN
 F 3 "~" H 6900 2650 50  0001 C CNN
 	1    6900 2650
@@ -270,7 +271,7 @@ L Device:R_Small_US R14
 U 1 1 5DBB68F2
 P 7500 2950
 F 0 "R14" H 7568 2996 50  0000 L CNN
-F 1 "R_Small_US" H 7568 2905 50  0000 L CNN
+F 1 "470" H 7568 2905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7500 2950 50  0001 C CNN
 F 3 "~" H 7500 2950 50  0001 C CNN
 	1    7500 2950
@@ -281,7 +282,7 @@ L Device:R_Small_US R2
 U 1 1 5DBB6C31
 P 5200 2800
 F 0 "R2" H 5268 2846 50  0000 L CNN
-F 1 "R_Small_US" H 5268 2755 50  0000 L CNN
+F 1 "1K" H 5268 2755 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5200 2800 50  0001 C CNN
 F 3 "~" H 5200 2800 50  0001 C CNN
 	1    5200 2800
@@ -292,7 +293,7 @@ L Device:R_Small_US R3
 U 1 1 5DBBD774
 P 5450 1400
 F 0 "R3" V 5245 1400 50  0000 C CNN
-F 1 "R_Small_US" V 5336 1400 50  0000 C CNN
+F 1 "10" V 5336 1400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5450 1400 50  0001 C CNN
 F 3 "~" H 5450 1400 50  0001 C CNN
 	1    5450 1400
@@ -303,7 +304,7 @@ L Device:R_Small_US R15
 U 1 1 5DBBDDA7
 P 7700 3750
 F 0 "R15" V 7495 3750 50  0000 C CNN
-F 1 "R_Small_US" V 7586 3750 50  0000 C CNN
+F 1 "10" V 7586 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7700 3750 50  0001 C CNN
 F 3 "~" H 7700 3750 50  0001 C CNN
 	1    7700 3750
@@ -314,7 +315,7 @@ L Device:R_Small_US R16
 U 1 1 5DBBE484
 P 7750 5250
 F 0 "R16" H 7818 5296 50  0000 L CNN
-F 1 "R_Small_US" H 7818 5205 50  0000 L CNN
+F 1 "1K" H 7818 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7750 5250 50  0001 C CNN
 F 3 "~" H 7750 5250 50  0001 C CNN
 	1    7750 5250
@@ -325,7 +326,7 @@ L Device:R_Small_US R13
 U 1 1 5DBBF017
 P 7350 5600
 F 0 "R13" H 7418 5646 50  0000 L CNN
-F 1 "R_Small_US" H 7418 5555 50  0000 L CNN
+F 1 "100" H 7418 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7350 5600 50  0001 C CNN
 F 3 "~" H 7350 5600 50  0001 C CNN
 	1    7350 5600
@@ -336,7 +337,7 @@ L Device:R_Small_US R10
 U 1 1 5DBBF447
 P 6600 5600
 F 0 "R10" H 6668 5646 50  0000 L CNN
-F 1 "R_Small_US" H 6668 5555 50  0000 L CNN
+F 1 "10" H 6668 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6600 5600 50  0001 C CNN
 F 3 "~" H 6600 5600 50  0001 C CNN
 	1    6600 5600
@@ -347,7 +348,7 @@ L Device:R_Small_US R9
 U 1 1 5DBBF8C5
 P 6300 5150
 F 0 "R9" H 6368 5196 50  0000 L CNN
-F 1 "R_Small_US" H 6368 5105 50  0000 L CNN
+F 1 "2.2K" H 6368 5105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 6300 5150 50  0001 C CNN
 F 3 "~" H 6300 5150 50  0001 C CNN
 	1    6300 5150
@@ -358,7 +359,7 @@ L Device:R_Small_US R7
 U 1 1 5DBBFE6A
 P 5750 5550
 F 0 "R7" H 5818 5596 50  0000 L CNN
-F 1 "R_Small_US" H 5818 5505 50  0000 L CNN
+F 1 "220" H 5818 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5750 5550 50  0001 C CNN
 F 3 "~" H 5750 5550 50  0001 C CNN
 	1    5750 5550
@@ -369,7 +370,7 @@ L Device:R_Small_US R1
 U 1 1 5DBC0332
 P 4700 4700
 F 0 "R1" H 4768 4746 50  0000 L CNN
-F 1 "R_Small_US" H 4768 4655 50  0000 L CNN
+F 1 "47" H 4768 4655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 4700 4700 50  0001 C CNN
 F 3 "~" H 4700 4700 50  0001 C CNN
 	1    4700 4700
@@ -380,7 +381,7 @@ L Device:R_Small_US R12
 U 1 1 5DBC06C6
 P 7350 4050
 F 0 "R12" H 7418 4096 50  0000 L CNN
-F 1 "R_Small_US" H 7418 4005 50  0000 L CNN
+F 1 "220" H 7418 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 7350 4050 50  0001 C CNN
 F 3 "~" H 7350 4050 50  0001 C CNN
 	1    7350 4050
@@ -487,7 +488,7 @@ L Device:R_Small_US R4
 U 1 1 5DBCF7D3
 P 5500 2050
 F 0 "R4" V 5295 2050 50  0000 C CNN
-F 1 "R_Small_US" V 5386 2050 50  0000 C CNN
+F 1 "2.2K" V 5386 2050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 5500 2050 50  0001 C CNN
 F 3 "~" H 5500 2050 50  0001 C CNN
 	1    5500 2050
@@ -517,10 +518,7 @@ Connection ~ 7750 5000
 Wire Wire Line
 	7750 5000 7650 5000
 Wire Wire Line
-	7350 5200 7350 5400
-Wire Wire Line
 	7050 5400 7350 5400
-Connection ~ 7350 5400
 Wire Wire Line
 	7350 5400 7350 5500
 Wire Wire Line
@@ -583,9 +581,6 @@ Wire Wire Line
 	7350 4150 7350 4400
 Wire Wire Line
 	6600 4400 7350 4400
-Connection ~ 7350 4400
-Wire Wire Line
-	7350 4400 7350 4800
 Wire Wire Line
 	6750 4100 6750 4150
 Wire Wire Line
@@ -602,8 +597,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 3750 6750 3750
 Connection ~ 6750 3750
-Wire Wire Line
-	5750 4600 5750 3750
 Wire Wire Line
 	5750 3750 6300 3750
 Connection ~ 6300 3750
@@ -636,7 +629,7 @@ L Device:R_Small_US R17
 U 1 1 5DC0F7E5
 P 8650 3150
 F 0 "R17" H 8718 3196 50  0000 L CNN
-F 1 "R_Small_US" H 8718 3105 50  0000 L CNN
+F 1 "47" H 8718 3105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" H 8650 3150 50  0001 C CNN
 F 3 "~" H 8650 3150 50  0001 C CNN
 	1    8650 3150
@@ -716,160 +709,112 @@ Wire Wire Line
 	4350 3900 4350 3800
 Wire Wire Line
 	8950 3900 8950 3800
-$Comp
-L Relay:G5V-1 K1
-U 1 1 5DC35E0C
-P 2500 3000
-F 0 "K1" V 1933 3000 50  0000 C CNN
-F 1 "G5V-1" V 2024 3000 50  0000 C CNN
-F 2 "Relay_THT:Relay_SPDT_Omron_G5V-1" H 3630 2970 50  0001 C CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf" H 2500 3000 50  0001 C CNN
-	1    2500 3000
-	0    1    1    0   
-$EndComp
-Text GLabel 3050 3100 2    50   Input ~ 0
+Text GLabel 3100 3100 2    50   Input ~ 0
 RX_12V
-Text GLabel 3050 3300 2    50   Input ~ 0
+Text GLabel 3100 3900 2    50   Input ~ 0
 TX_12V
-Wire Wire Line
-	3050 3100 2800 3100
-Wire Wire Line
-	3050 3300 2800 3300
 $Comp
-L Diode:1N4004 D1
-U 1 1 5DC40E3A
-P 2500 2200
-F 0 "D1" H 2500 1984 50  0000 C CNN
-F 1 "1N4004" H 2500 2075 50  0000 C CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2500 2025 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 2500 2200 50  0001 C CNN
-	1    2500 2200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2800 2800 2950 2800
-Wire Wire Line
-	2950 2200 2650 2200
-Wire Wire Line
-	2950 2200 2950 2800
-Wire Wire Line
-	2350 2200 1950 2200
-Wire Wire Line
-	1950 2200 1950 2800
-Wire Wire Line
-	1950 2800 2200 2800
-$Comp
-L power:GND #PWR0107
-U 1 1 5DC48E0A
-P 1700 2450
-F 0 "#PWR0107" H 1700 2200 50  0001 C CNN
-F 1 "GND" H 1705 2277 50  0000 C CNN
-F 2 "" H 1700 2450 50  0001 C CNN
-F 3 "" H 1700 2450 50  0001 C CNN
-	1    1700 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 2450 1700 2200
-Wire Wire Line
-	1700 2200 1950 2200
-Connection ~ 1950 2200
-$Comp
-L power:+12V #PWR0108
-U 1 1 5DC4CBDF
-P 1850 3100
-F 0 "#PWR0108" H 1850 2950 50  0001 C CNN
-F 1 "+12V" H 1865 3273 50  0000 C CNN
-F 2 "" H 1850 3100 50  0001 C CNN
-F 3 "" H 1850 3100 50  0001 C CNN
-	1    1850 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1850 3100 1850 3200
-Wire Wire Line
-	1850 3200 2200 3200
-$Comp
-L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J1
+L rf-amp-rescue:105-1102-001-dk_Banana-and-Tip-Connectors-Jacks-Plugs J1
 U 1 1 5DC52BC8
-P 1150 3000
-F 0 "J1" H 1228 2988 50  0000 L CNN
-F 1 "105-1102-001" H 1228 2897 50  0000 L CNN
-F 2 "digikey-footprints:Test_Jack_Horiz" H 1350 3200 60  0001 L CNN
-F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1350 3300 60  0001 L CNN
-F 4 "J576-ND" H 1350 3400 60  0001 L CNN "Digi-Key_PN"
-F 5 "105-1102-001" H 1350 3500 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 1350 3600 60  0001 L CNN "Category"
-F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1350 3700 60  0001 L CNN "Family"
-F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1350 3800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 1350 3900 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN TIP JACK SOLDER RED" H 1350 4000 60  0001 L CNN "Description"
-F 11 "Cinch Connectivity Solutions Johnson" H 1350 4100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1350 4200 60  0001 L CNN "Status"
-	1    1150 3000
-	1    0    0    -1  
+P 2450 3100
+F 0 "J1" H 2528 3088 50  0000 L CNN
+F 1 "105-1102-001" H 2528 2997 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 2650 3300 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 3400 60  0001 L CNN
+F 4 "J576-ND" H 2650 3500 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 2650 3600 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2650 3700 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 2650 3800 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 3900 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 2650 4000 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 2650 4100 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 2650 4200 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2650 4300 60  0001 L CNN "Status"
+	1    2450 3100
+	0    -1   -1   0   
 $EndComp
 $Comp
-L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1103-001 J2
+L rf-amp-rescue:105-1103-001-dk_Banana-and-Tip-Connectors-Jacks-Plugs J2
 U 1 1 5DC53C43
-P 1150 3550
-F 0 "J2" H 1228 3538 50  0000 L CNN
-F 1 "105-1103-001" H 1228 3447 50  0000 L CNN
-F 2 "digikey-footprints:Test_Jack_Horiz" H 1350 3750 60  0001 L CNN
-F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1350 3850 60  0001 L CNN
-F 4 "J577-ND" H 1350 3950 60  0001 L CNN "Digi-Key_PN"
-F 5 "105-1103-001" H 1350 4050 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 1350 4150 60  0001 L CNN "Category"
-F 7 "Banana and Tip Connectors - Jacks, Plugs" H 1350 4250 60  0001 L CNN "Family"
-F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 1350 4350 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1103-001/J577-ND/241122" H 1350 4450 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN TIP JACK SOLDER BLACK" H 1350 4550 60  0001 L CNN "Description"
-F 11 "Cinch Connectivity Solutions Johnson" H 1350 4650 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 1350 4750 60  0001 L CNN "Status"
-	1    1150 3550
-	1    0    0    -1  
+P 2450 4650
+F 0 "J2" H 2528 4638 50  0000 L CNN
+F 1 "105-1103-001" H 2528 4547 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 2650 4850 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 4950 60  0001 L CNN
+F 4 "J577-ND" H 2650 5050 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1103-001" H 2650 5150 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2650 5250 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 2650 5350 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 5450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1103-001/J577-ND/241122" H 2650 5550 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER BLACK" H 2650 5650 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 2650 5750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2650 5850 60  0001 L CNN "Status"
+	1    2450 4650
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5DC543C7
-P 1150 3850
-F 0 "#PWR0109" H 1150 3600 50  0001 C CNN
-F 1 "GND" H 1155 3677 50  0000 C CNN
-F 2 "" H 1150 3850 50  0001 C CNN
-F 3 "" H 1150 3850 50  0001 C CNN
-	1    1150 3850
+P 3300 4750
+F 0 "#PWR0109" H 3300 4500 50  0001 C CNN
+F 1 "GND" H 3305 4577 50  0000 C CNN
+F 2 "" H 3300 4750 50  0001 C CNN
+F 3 "" H 3300 4750 50  0001 C CNN
+	1    3300 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 3700 1150 3850
-Wire Wire Line
-	1150 3150 1150 3250
-Wire Wire Line
-	1150 3250 1850 3250
-Wire Wire Line
-	1850 3250 1850 3200
-Connection ~ 1850 3200
 $Comp
-L dk_Banana-and-Tip-Connectors-Jacks-Plugs:105-1102-001 J3
+L rf-amp-rescue:105-1102-001-dk_Banana-and-Tip-Connectors-Jacks-Plugs J3
 U 1 1 5DC5BECC
-P 2950 1950
-F 0 "J3" H 3028 1938 50  0000 L CNN
-F 1 "105-1102-001" H 3028 1847 50  0000 L CNN
-F 2 "digikey-footprints:Test_Jack_Horiz" H 3150 2150 60  0001 L CNN
-F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3150 2250 60  0001 L CNN
-F 4 "J576-ND" H 3150 2350 60  0001 L CNN "Digi-Key_PN"
-F 5 "105-1102-001" H 3150 2450 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 3150 2550 60  0001 L CNN "Category"
-F 7 "Banana and Tip Connectors - Jacks, Plugs" H 3150 2650 60  0001 L CNN "Family"
-F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 3150 2750 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 3150 2850 60  0001 L CNN "DK_Detail_Page"
-F 10 "CONN TIP JACK SOLDER RED" H 3150 2950 60  0001 L CNN "Description"
-F 11 "Cinch Connectivity Solutions Johnson" H 3150 3050 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 3150 3150 60  0001 L CNN "Status"
-	1    2950 1950
-	1    0    0    -1  
+P 2450 3900
+F 0 "J3" H 2528 3888 50  0000 L CNN
+F 1 "105-1102-001" H 2528 3797 50  0000 L CNN
+F 2 "digikey-footprints:Test_Jack_Horiz" H 2650 4100 60  0001 L CNN
+F 3 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 4200 60  0001 L CNN
+F 4 "J576-ND" H 2650 4300 60  0001 L CNN "Digi-Key_PN"
+F 5 "105-1102-001" H 2650 4400 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2650 4500 60  0001 L CNN "Category"
+F 7 "Banana and Tip Connectors - Jacks, Plugs" H 2650 4600 60  0001 L CNN "Family"
+F 8 "https://belfuse.com/resources/Johnson/drawings/dr-1051101001.pdf" H 2650 4700 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cinch-connectivity-solutions-johnson/105-1102-001/J576-ND/241121" H 2650 4800 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN TIP JACK SOLDER RED" H 2650 4900 60  0001 L CNN "Description"
+F 11 "Cinch Connectivity Solutions Johnson" H 2650 5000 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2650 5100 60  0001 L CNN "Status"
+	1    2450 3900
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 2100 2950 2200
-Connection ~ 2950 2200
+	5750 3750 5750 4650
+Wire Wire Line
+	7350 4400 7350 4800
+Connection ~ 7350 4400
+Wire Wire Line
+	7350 5200 7350 5400
+Connection ~ 7350 5400
+Wire Wire Line
+	3300 4650 3300 4750
+Wire Wire Line
+	2600 4650 3300 4650
+Wire Wire Line
+	2600 3100 3100 3100
+$Comp
+L Device:R_Small_US R18
+U 1 1 5DBB0032
+P 2900 3900
+F 0 "R18" V 2695 3900 50  0000 C CNN
+F 1 "0" V 2786 3900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 2900 3900 50  0001 C CNN
+F 3 "~" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 3900 2600 3900
+Wire Wire Line
+	3100 3900 3000 3900
+Text Notes 7600 4600 0    50   ~ 0
+2.2K feedback resistor missing
+Text Notes 7600 4450 0    50   ~ 0
+W7ZOI circuit has separate DC restoration, and the feedback is DC blocked.
 $EndSCHEMATC
